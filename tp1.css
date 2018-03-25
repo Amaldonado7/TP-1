@@ -56,6 +56,15 @@ header{
   justify-content: space-between;
 }
 
+.rrss {
+  display: inline-block;
+}
+
+.rrss img{
+  height: 30px;
+  width: 30px;
+}
+
 
 /*********************Main Content***************************/
 
@@ -70,6 +79,23 @@ header{
   width: 100%;
   height: auto;
 }
+
+.container-recuadros{
+  display: flex;
+}
+
+.recuadros img {
+  width: 100%;
+  height: auto;
+}
+
+.recuadros {
+  display: flex;
+}
+
+
+
+
 
 
 
