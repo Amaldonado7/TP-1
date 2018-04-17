@@ -159,52 +159,38 @@ header{
 }
 
 
-.footer-container{
-  margin: auto;
-  height: auto;
-  min-width: 1048px;
-  max-width: 1048px;
-
-}
-
-.texto-footer{
-  color: black;
-  text-align: left;
-  display: inline-block;
-}
-
-.footer-fotos{
-  width: 36px;
-  height: 36px;
-  color: pink;
-  display: inline-block;
-
-  
-
-}
-
-.cuadrados-footer{
-  width: 100px;
-  height: auto;
-  display: inline-block;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /**********************Footer*****************************/
+
+footer .footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: stretch;
+  flex-flow: row wrap;
+  }
+
+footer .footer-container p{
+  color: black;
+  margin-left: 15%;
+  }
+
+footer .footer-fotos{
+  color: pink;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  }
+
+footer .footer-fotos img{
+  width: 100%;
+}
+
+
+
+
+
+
+
