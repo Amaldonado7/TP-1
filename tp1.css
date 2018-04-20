@@ -1,49 +1,22 @@
-body {
+body{
   margin: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.main-container {
-  margin: auto;
-  height: auto;
-  min-width: 1048px;
-  max-width: 1048px;
-
-}
-
 /*********************Header***************************/
-.texto-header{
-  text-align: center;
-  width: 300px;
-  height: 150px;
-}
-
-.logo-estonia{
-  width: 60px;
-  height: 60px;
-  margin: 20px;
-}
-
-.texto-header2{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-}
-
-nav {
+nav{
   width: 100%;
   height: 80px;
   background-color: #017CBD;
 }
 
-.nav-container {
+.nav-container{
   max-width: 1024px;
   min-width: 1024px;
   margin: auto;
 }
 
-.logo-container {
+.logo-container{
   display: inline-block;
   float: left;
 }
@@ -52,9 +25,7 @@ nav {
   width: 60px;
   height: 60px;
   margin: 10px;
-
 }
-
 
 .menu a{
   text-decoration: none;
@@ -65,7 +36,7 @@ nav {
   float: right;
 }
 
-.menu a:hover {
+.menu a:hover{
   font-weight: bold;
   color: grey;
 }
@@ -74,21 +45,25 @@ header{
   width: 100%;
   height: auto;
   margin: auto;
-  background: gold;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  background: gold;  
   background-color: #FFC300;
 }
 
-.fotito{
-  width: 100px;
-  height: 100px;
-  margin: 50px;
+.texto-header{
+  width: 50%;
+  height: 150px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  display: inline-block;
 }
 
-.rrss {
+.redes{
+  display: inline-block;
+}
+
+.rrss{
   display: inline-block;
   font-size: 10px;
   text-align: center;
@@ -105,38 +80,54 @@ header{
 
 /*********************Main Content***************************/
 
-
-.main-banner-container {
+.main-banner-container{
+  min-width: 1048px;
+  max-width: 1048px;
   height: 340px;
   overflow: hidden;
   margin: auto;
-
-
 }
 
+.main-banner-container2{
+  display: none;
+}
 
-.main-banner-container img {
+.main-banner-container img{
   width: 100%;
   height: auto;
-  display: flex;
   margin: 10px;
+}
+
+.main-container{
+  margin: auto;
+  height: auto;
+  
+  max-width: 1048px;
 }
 
 .container-recuadros{
   display: flex;
-  margin: 10px;
-
+  margin: 5px;
+  align-items: flex-start;
 }
 
-.cuadro-1 , .cuadro-2, .cuadro-3 {
-  width: 150px;
-  height: 150px;
+.recuadros{
+  width: 340px;
+  height: 225px;
+  display: flex;
+  margin: auto;
+  border-left: 5px solid #234793;
+}
+
+.cuadro{
+  width: 100px;
+  height: 100px;
   margin: 15px;
 
 }
 
 .texto-foto{
-  width: 100px;
+  width: 150px;
   height: auto;
   margin: 10px;
 }
@@ -146,30 +137,35 @@ header{
   height: auto;
 }
 
-.recuadros img {
-  width: 100%;
+.recuadros img{
+  width: 100px;
+  height: 100px
   height: auto;
-
 }
 
-.recuadros {
+.contenidofinal{
   display: flex;
-  margin: auto;
-  border-left: 5px solid #234793;
+  justify-content: center;
 }
 
-
-
-
+.contenidofinal p{
+  font-weight: bold;
+}
 
 /**********************Footer*****************************/
 
-footer .footer-container {
+.mail{
+  margin-left: 150px
+}
+
+footer .footer-container{
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
   align-items: stretch;
   flex-flow: row wrap;
+  margin-right: 150px;
+  margin-bottom: 20px
   }
 
 footer .footer-container p{
@@ -187,6 +183,76 @@ footer .footer-fotos{
 footer .footer-fotos img{
   width: 100%;
 }
+
+/**********************Media Query*****************************/
+
+@media only screen and (max-width: 1000px){
+
+  .nav-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .texto-header{
+    width: 100%;
+    height: auto;
+  }
+
+  .redes{
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-banner-container{
+    display: none;
+  }
+
+  .main-banner-container2{
+    width: auto;
+    height: auto;
+    display: block;
+  }
+
+  .main-banner-container2 img{
+    width: 100%;
+  }
+  .main-container{
+    width: 100%;
+  }
+  
+  .container-recuadros{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .recuadros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-left: 0px;
+  }
+
+  .contenidofinal{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+}
+
+
 
 
 
